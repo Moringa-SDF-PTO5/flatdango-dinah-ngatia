@@ -1,74 +1,53 @@
-# GitHub Search App
+# Movie Ticket Booking System
+ 
+ This project is a web application that allows users to book movie tickets online. It is written in plain(vanilla) javascript and HTML, and uses node.js and npm for the backend. This application allows users to view available movies by title and provides information about each movie such as the runtime, showtime and available tickets. The application is designed to be simple ans easy to use.
 
-## Learning Goals
+ ## Features
+ - View movie details including posters, title, runtime, showtime and available tickets.
+ - Select a movie from the films menu.
+ - Buy ticket for the selected movie.
+ - Delete a movie from the list.
+  
+## Dependencies and Requirements
+- Node.js v12.0 or later
+- npm v5.0 or later
+- A web browser (any modern browser will do)
+- Live Server extension(This will enable you to launch your local development server with live reload capability. As you make changes to your HTML, CSS an JS files, the changes will automatically be reflected in the browser without need to manually refresh the page.)
 
-- Practice accessing information from APIs and using it to update the DOM
-- Practice listening for user events and updating the DOM in response
+The above lists the minimum versions of node.js and npm that are required.
 
-## Instructions
+## Getting Started 
 
-You will be using the GitHub API for this project. You can view documentation
-for this API [here](https://developer.github.com/v3/). This is an open API: no
-API key or authentication is required for the endpoints we will be using.
+Welcome user! To run the movie ticket booking system, follow the steps below:
 
-Notice the GitHub API documentation includes the following excerpt:
+1. Clone the repository:
+~~~bash
+git clone https://github.com/Dinah-Ngatia5/movie-ticket-booking-system.git
+~~~
 
-> By default, all requests to <https://api.github.com> receive the v3 version of
-> the REST API. We encourage you to explicitly request this version via the
-> Accept header.
+2. Open the `index.html` file in your web browser.
 
-They require you to add a custom header to your requests:
+3. Interact with the movie details,films menu, and 'Buy Ticket' button to experience the functionality.
 
-```text
-Accept: application/vnd.github.v3+json
-```
+## Folder Structure 
+~~~
+- app.js
+- db.json
+- index.css
+- index.html
+- README.md
+~~~
 
-### [User Search Endpoint](https://developer.github.com/v3/search/#search-users)
 
-You can search for users matching a certain name. For example, if we wanted to
-find all users named `octocat`, we would make a `GET` request to
-`https://api.github.com/search/users?q=octocat`. To view the response, you can
-copy and paste that URL into your browser.
+## Contributing
+Contribution are always  highly welcome! If you'd like to contribute to this project please follow these guidelines:
 
-This endpoint is rate limited. This means the API will stop returning data if
-you make more than
-[10 requests per minute](https://developer.github.com/v3/search/#rate-limit).
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes and test them.
+4. Submit a pull request with a detailed explanation of you changes
 
-### [User Repos Endpoint](https://developer.github.com/v3/repos/#list-user-repositories)
-
-You can find all the public repositories for a user using this endpoint. For
-example if we wanted to find all the repositories for a user with GitHub
-username `octocat`, we would make a `GET` request to
-`https://api.github.com/users/octocat/repos`. To view the response, you can copy
-and paste that URL into your browser.
-
-This endpoint is rate limited. This endpoint will stop returning data if you
-make more than
-[60 requests in an hour](https://developer.github.com/v3/#rate-limiting).
-
-## Deliverables
-
-You are going to build a JavaScript application which searches GitHub for users
-by name and displays the results on the screen. Clicking on a specific user will
-show all the repositories for that user.
-
-1. The `index.html` file has a form with a search input. When the form is
-   submitted, it should take the value of the input and search GitHub for user
-   matches using the [User Search Endpoint](#user-search-endpoint).
-2. Using the results of the search, display information about the users to the
-   page. (You might include showing their username, avatar and a link to their
-   profile.)
-3. Clicking on one of these users should send a request to the
-   [User Repos Endpoint](#user-repos-endpoint) and return data about all the
-   repositories for that user.
-4. Using the response from the Users Repos Endpoint, display all the
-   repositories for that user on the page.
-
-## Bonus
-
-- Toggle the search bar between searching for users by keyword and searching for
-  repos by keyword by adding an extra button. Hint: you can use the same search
-  bar for this, but you may need to create a variable which stores what the
-  current search type is (user or repo). The endpoint to search repositories by
-  keyword is
-  [here](https://developer.github.com/v3/search/#search-repositories).
+## License
+~~~
+This project is licenced under the MIT License - see the [LICENSE] for further details.
+~~~

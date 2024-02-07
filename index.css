@@ -1,13 +1,65 @@
-#main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:#f4f4f4;
 }
 
-#github-container {
-  display: flex;
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.1);
 }
 
-ul {
+.movie-details {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-details {
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.movie-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.films-menu {
   list-style: none;
+  padding: 0;
+}
+
+.films-menu .film {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.films-menu .film:hover{
+  background-color: #f9f9f9;
+}
+
+.films-menu .film.sold-out {
+  background-color: #ffe6e6;
+}
+
+#buy-ticket {
+  padding: 10px 20px;
+  font-size: 16px;
+  color:#fff;
+  background-color: blueviolet;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+#buy-ticker:hover {
+  background-color: yellowgreen;
 }

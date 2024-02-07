@@ -1,33 +1,26 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset='UTF-8'/>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
-  <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
-  <title>Document</title>
-  <script src='js/index.js'></script>
-  <link rel='stylesheet' href='index.css'/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" src="index.css"/>
 </head>
 <body>
-  <div id='main'>
-
-    <h2>GitHub Search</h2>
-
-    <form id='github-form'>
-      <input id='search' type='text' name='search'>
-      <input type='submit' name='submit'/>
-    </form>
-
-    <div id='github-container'>
-      <ul id='user-list'>
-
-      </ul>
-
-      <ul id='repos-list'>
-
-      </ul>
+    <div class="container">
+        <div class="movie-details">
+            <img id="movie-poster" src="" alt="Movie Poster">
+            <h2 id="movie-title"></h2>
+            <p>Runtime: <span id="movie-runtime"></span></p>
+            <p id="movie-showtime"></p>
+            <p id="available-tickets"></p>
+            <button id="buy-ticket">Buy Ticket</button>
+        </div>
+        <ul id="films" class="films-menu">
+            <!--Films will be populated using Js-->
+        </ul>
     </div>
-
-  </div>
-
+    <script src="app.js"></script>
+    
 </body>
 </html>
